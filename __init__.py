@@ -1,3 +1,3 @@
-from src import erlc
+from src.erlc import *
 
-__all__ = erlc.exports
+__all__ = exports
