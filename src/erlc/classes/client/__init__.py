@@ -1,4 +1,4 @@
-from erlc import getconfig, setconfig
+from erlc import setconfig
 from classes.client.unfinishedclient import UnfinishedClient
 class Client():
     def __init__(self, options: dict):
