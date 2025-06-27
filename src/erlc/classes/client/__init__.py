@@ -6,5 +6,7 @@ class Client():
         
         self.options = options
     
-    def config(self):
+    def config(self, silence: bool = False):
+        if not silence:
+            print(f"WARNING: The config function in Client is not required to call. Pass silence=True to stop this warning.") # TODO: add color
         return self.options
