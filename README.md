@@ -13,5 +13,5 @@ from src import erlc
 client = erlc.Client({
     "globalToken": '< PUT YOUR GLOBAL TOKEN HERE >'
 })
-client.config()
+client.config() # You must call to save your changes.
 ```
