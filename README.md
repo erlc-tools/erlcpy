@@ -4,6 +4,7 @@
 <p align="center">This is a copy of 0xRaptor/erlc but in python!</p>
 
 <h5>Setting Up</h5>
+
 Setting up is super simple:
 ```py
 # main.py
