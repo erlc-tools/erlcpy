@@ -8,7 +8,7 @@
 Setting up is super simple:
 ```py
 # main.py
-from src import erlc
+import erlc
 
 client = erlc.Client({
     "globalToken": '< PUT YOUR GLOBAL TOKEN HERE >'
