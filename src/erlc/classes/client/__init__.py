@@ -1,10 +1,6 @@
 class Client():
-    def __init__(self, options: dict):
-        if not isinstance(options, dict):
-            raise TypeError(f"Expected dict for parameters options. Got {type(options)}")
-            return
-        
-        self.options = options
+    def __init__(self, globalToken: bool | None):
+        self.globalToken = globalToken
     
 
 exports = [Client]
