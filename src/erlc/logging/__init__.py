@@ -5,6 +5,6 @@ if debug:
 
 def error(content):
     print(f"ERROR: {content}")
-def debug(content):
+def debug(*args):
     if debug:
-        ic("ERLC-PY DEBUG", content)
+        ic("ERLC-PY DEBUG", args)
