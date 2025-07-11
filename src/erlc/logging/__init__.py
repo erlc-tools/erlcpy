@@ -1,4 +1,4 @@
-debug: bool = True
+debug: bool = False
 if debug:
     from icecream import ic
 
