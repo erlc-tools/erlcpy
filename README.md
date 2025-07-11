@@ -10,8 +10,7 @@ Setting up is super simple:
 # main.py
 import erlc
 
-client = erlc.Client({
-    "globalToken": '< PUT YOUR GLOBAL TOKEN HERE >'
-})
-client.config() # You must call to save your changes.
+client = erlc.Client(
+    globalToken: str | None # Set to None if you do not have a ratelimit key
+)
 ```

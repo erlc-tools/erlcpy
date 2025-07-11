@@ -1,11 +1,6 @@
-from erlc.classes.client import ( Client, UnfinishedClient )
+from erlc.classes.client import ( Client )
 
-def getconfig():
-    return config
-def setconfig(new):
-    global config
-    config = new
-config = UnfinishedClient()
 
-exports = [Client, getconfig, setconfig] # change this instead of __all__!
+
+exports = [Client] # change this instead of __all__!
 __all__ = exports

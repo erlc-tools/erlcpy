@@ -1,5 +1,3 @@
-from erlc import setconfig
-from classes.client.unfinishedclient import UnfinishedClient
 class Client():
     def __init__(self, options: dict):
         if not isinstance(options, dict):
@@ -8,9 +6,6 @@ class Client():
         
         self.options = options
     
-    def config(self):
-        setconfig(self.options)
-        return self.options
 
-exports = [Client, UnfinishedClient]
+exports = [Client]
 __all__ = exports
