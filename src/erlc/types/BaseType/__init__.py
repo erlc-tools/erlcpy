@@ -1,4 +1,6 @@
 class BaseType:
+    def __init__(self):
+        self.value = self.Value()
     raw: any # Original input
     
     class Value: # This will be the actual value of the thing
