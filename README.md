@@ -1,5 +1,9 @@
 <h1 align="center">ERLC-py</h1>
 
+<p align="center">
+    <img src="https://www.codefactor.io/repository/github/erlc-tools/erlcpy/badge" alt="ERLC-py Codefactor Rating" width="100">
+</p>
+
 <h3 align="center">A python library to communicate with the PRC Private Server API</h3>
 <p align="center">This is a copy of 0xRaptor/erlc but in python!</p>
 
