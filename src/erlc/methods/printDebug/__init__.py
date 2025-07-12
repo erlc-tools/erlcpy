@@ -1,4 +1,2 @@
-from icecream import ic
-
 def printDebug(client):
-    ic(client)
+    client.logger._ic(client)
