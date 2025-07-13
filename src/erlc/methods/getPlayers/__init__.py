@@ -1,7 +1,7 @@
 from icecream import ic
 from requests import get
 
-def playerCount(client, key: str):
+def getPlayers(client, key: str):
     res = get("https://api.policeroleplay.community/v1/server/players",
               headers={
                   "Authorization": client.globalToken,
