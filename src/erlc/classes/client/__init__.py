@@ -31,6 +31,9 @@ class Client():
     
     def getQueue(self, key: str) -> list[int]:
         ...
+    
+    def runCommand(self, key: str, command: str) -> None:
+        ...
         
 
 exports = [Client]
