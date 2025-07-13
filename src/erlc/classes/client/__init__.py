@@ -10,13 +10,13 @@ class Client():
         self.logger = Logger(debug=debug)
     
     def _printDebug(self) -> None:
-        printDebugORIGIN(self)
+        return printDebugORIGIN(self)
     
     def getPlayers(self, key: str) -> int:
-        getPlayersORIGIN(self, key)
+        return getPlayersORIGIN(self, key)
         
     def getBans(self, key: str) -> dict[str: str]:
-        ...
+        return getBansORIGIN(self, key)
     
     def getCommandLogs(self, key: str) -> list[dict]:
         ...
