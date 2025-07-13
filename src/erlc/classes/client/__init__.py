@@ -17,7 +17,8 @@ class Client():
     def getBans(self, key: str) -> dict[str: str]:
         ...
     
-    
+    def getCommandLogs(self, key: str) -> list[dict]:
+        ...
     
 
 exports = [Client]
