@@ -1,5 +1,5 @@
 from erlc.methods.printDebug import printDebug as printDebugORIGIN
-from erlc.methods.playerCount import playerCount as playerCountORIGIN
+from erlc.methods.getPlayers import getPlayers as getPlayers
 from erlc.logging import Logger
 class Client():
     def __init__(self, globalToken: bool | None,
@@ -8,11 +8,13 @@ class Client():
         
         self.logger = Logger(debug=debug)
     
-    def printDebug(self) -> None:
+    def _printDebug(self) -> None:
         printDebugORIGIN(self)
     
-    def playerCount(self, key: str) -> int:
-        playerCountORIGIN(self, key)
+    def getPlayers(self, key: str) -> int:
+        getPlayers(self, key)
+    
+    
     
 
 exports = [Client]
