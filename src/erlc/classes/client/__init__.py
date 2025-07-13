@@ -29,6 +29,9 @@ class Client():
     def getModcallLogs(self, key: str) -> list[dict]:
         ...
     
+    def getQueue(self, key: str) -> list[int]:
+        ...
+        
 
 exports = [Client]
 __all__ = exports
