@@ -19,6 +19,9 @@ class Client():
     
     def getCommandLogs(self, key: str) -> list[dict]:
         ...
+        
+    def getJoinLogs(self, key: str) -> list[dict]:
+        ...
     
 
 exports = [Client]
