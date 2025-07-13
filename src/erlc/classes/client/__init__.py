@@ -26,6 +26,9 @@ class Client():
     def getKillLogs(self, key: str) -> list[dict]:
         ...
     
+    def getModcallLogs(self, key: str) -> list[dict]:
+        ...
+    
 
 exports = [Client]
 __all__ = exports
