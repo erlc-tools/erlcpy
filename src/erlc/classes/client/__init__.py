@@ -1,5 +1,6 @@
 from erlc.methods.printDebug import printDebug as printDebugORIGIN
-from erlc.methods.getPlayers import getPlayers as getPlayers
+from erlc.methods.getPlayers import getPlayers as getPlayersORIGIN
+from erlc.methods.getBans import getBans as getBansORIGIN
 from erlc.logging import Logger
 class Client():
     def __init__(self, globalToken: bool | None,
@@ -12,7 +13,7 @@ class Client():
         printDebugORIGIN(self)
     
     def getPlayers(self, key: str) -> int:
-        getPlayers(self, key)
+        getPlayersORIGIN(self, key)
         
     def getBans(self, key: str) -> dict[str: str]:
         ...
