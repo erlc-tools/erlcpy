@@ -9,10 +9,10 @@ class Client():
         self.logger = Logger(debug=debug)
     
     def printDebug(self) -> None:
-        printDebugORIGIN(self)
+        return printDebugORIGIN(self)
     
     def playerCount(self, key: str) -> int:
-        playerCountORIGIN(self, key)
+        return playerCountORIGIN(self, key)
     
 
 exports = [Client]
