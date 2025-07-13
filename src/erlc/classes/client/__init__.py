@@ -13,6 +13,9 @@ class Client():
     
     def getPlayers(self, key: str) -> int:
         getPlayers(self, key)
+        
+    def getBans(self, key: str) -> dict[str: str]:
+        ...
     
     
     
